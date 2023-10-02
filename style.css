@@ -77,7 +77,63 @@ h4 {
 /* ----------------------------------------- */
 
 :root {
-  --bg-color: #2ab3b1;
-  --bg-suvs: #006971;
-  --bg-luxury: #004140;
+  --bg-green: #2ab3b1;
+  --heading-primary: #2ab3b1;
+  --text-green: #c0df33;
+  --btn-green: #c0df33;
+  --text-grey: #9aa7be;
+  --text-white: #fff:
+  --bg-white: #fff:
+}
+
+/* ----------------------------------------- */
+/* General Style */
+/* ----------------------------------------- */
+
+body {
+    
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.3125rem;
+
+}
+
+.heading-primary {
+    color: var(--heading-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.heading-secondary {
+    
+    color: var(--btn-green);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.25rem; /* 133.333% */
+    letter-spacing: -0.01169rem;
+
+}
+
+.text {
+
+    color: #9AA7BE;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.625rem;  
+    letter-spacing: -0.01094rem;
+
+}
+
+.section-about {
+    background-color: var(--bg-white);
+}
+
+.section-signup, .section-features{
+    background-color: var(--bg-green);
 }
