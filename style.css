@@ -78,13 +78,15 @@ h4 {
 
 :root {
   --bg-green: #2ab3b1;
-  --heading-primary: #2ab3b1;
+  --bg-green-1: #81d8d7;
+  --heading-primary: #4fb6b4;
   --text-green: #c0df33;
   --btn-green: #c0df33;
   --text-grey: #9aa7be;
   --text-white: #fff;
   --bg-white: #fff;
   --bg-blue: #e6eff5;
+  --pad-rl-2_5: 2.5rem 0;
 }
 
 /* ----------------------------------------- */
@@ -159,12 +161,21 @@ body {
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
   margin-right: 2rem;
   margin-left: 2rem;
-  border-radius: 0.3125rem;
 
   @media (min-width: 37rem) {
-    background-color: red;
-    width: min(90%, 39rem);
+    width: min(90%, 40rem);
     margin: 0 auto;
+    margin-top: 10rem;
+  }
+}
+
+.full-card {
+  border-radius: 0.315rem;
+}
+
+.card {
+  @media (min-width: 37rem) {
+    display: flex;
   }
 }
 
@@ -172,14 +183,29 @@ body {
   color: var(--heading-primary);
   font-size: 1.25rem;
   font-weight: 700;
+
+  @media (min-width: 37rem) {
+    font-size: 1.5rem;
+  }
 }
 
 .heading-secondary {
   color: var(--btn-green);
   font-size: 0.9375rem;
   font-weight: 700;
-  line-height: 1.25rem; /* 133.333% */
+  line-height: 1.25rem;
   letter-spacing: -0.01169rem;
+
+  @media (min-width: 37rem) {
+    font-size: 1.125rem;
+  }
+}
+
+.heading-tertiary {
+  @media (min-width: 37rem) {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
 }
 
 .text {
@@ -188,16 +214,44 @@ body {
   font-weight: 400;
   line-height: 1.625rem;
   letter-spacing: -0.01094rem;
+
+  @media (min-width: 37rem) {
+    padding-bottom: 2.5rem;
+    font-size: 1rem;
+  }
 }
 
 .section-about {
   background-color: var(--bg-white);
+  border-radius: 0.315rem 0.315rem 0 0;
+
+  @media (min-width: 37rem) {
+    padding-bottom: 2.5rem;
+  }
 }
 
+.section-about,
 .section-signup,
 .section-features {
+  @media (min-width: 37rem) {
+    padding: 0 2.5rem;
+    padding-top: 2.5rem;
+    width: 100%;
+  }
+}
+.section-signup {
   background-color: var(--bg-green);
   color: var(--text-white);
+  flex-grow: 1;
+  padding-bottom: 2.5rem;
+  border-bottom-left-radius: 0.315rem;
+}
+
+.section-features {
+  color: var(--text-white);
+  background-color: var(--bg-green-1);
+  flex-grow: 1;
+  border-bottom-right-radius: 0.315rem;
 }
 
 .heading-tertiary {
@@ -215,6 +269,12 @@ body {
 .price-text {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.signup-text {
+  @media (min-width: 37rem) {
+    font-size: 0.95rem;
+  }
 }
 
 .btn:link,
@@ -242,6 +302,10 @@ body {
 .list {
   list-style: none;
   margin-left: -2.3rem;
+  line-height: 1.25rem;
+}
+
+li {
   line-height: 1.25rem;
 }
 
