@@ -84,10 +84,23 @@ h4 {
   --text-grey: #9aa7be;
   --text-white: #fff;
   --bg-white: #fff;
+  --bg-blue: #e6eff5;
 }
+
+/* ----------------------------------------- */
+/* Utility Classes */
+/* ----------------------------------------- */
 
 .pad-1_5 {
   padding: 0 1.5rem;
+}
+
+.pad-tb-1 {
+  padding: 1rem 0;
+}
+
+.pad-t-1_5 {
+  padding-top: 1.5rem;
 }
 
 .pad-t-1_75 {
@@ -98,12 +111,48 @@ h4 {
   padding-bottom: 1.5rem;
 }
 
+.pad-b-1 {
+  padding-bottom: 1rem;
+}
+
+.pad-b-2 {
+  padding-bottom: 2rem;
+}
+
+.mar-tb-1_5 {
+  margin: 1.5rem 0;
+}
+
+.mar-t-2 {
+  margin-top: 2rem;
+}
+
+.mar-b-1 {
+  margin-bottom: 1rem;
+}
+
+.mar-b-1_5 {
+  margin-bottom: 1.5rem;
+}
+
+.mar-b-2 {
+  margin-bottom: 2rem;
+}
+
+.mar-t-4_5 {
+  margin-top: 4.5rem;
+}
+
 /* ----------------------------------------- */
 /* General Style */
 /* ----------------------------------------- */
 
 body {
   font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-blue);
 }
 
 .container {
@@ -111,6 +160,12 @@ body {
   margin-right: 2rem;
   margin-left: 2rem;
   border-radius: 0.3125rem;
+
+  @media (min-width: 37rem) {
+    background-color: red;
+    width: min(90%, 39rem);
+    margin: 0 auto;
+  }
 }
 
 .heading-primary {
@@ -142,4 +197,55 @@ body {
 .section-signup,
 .section-features {
   background-color: var(--bg-green);
+  color: var(--text-white);
+}
+
+.heading-tertiary {
+  color: var(--text-white);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.price {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn:link,
+.btn:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-white);
+  background-color: var(--btn-green);
+  font-weight: 700;
+  border-radius: 0.32rem;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin-right: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  margin-left: -2.3rem;
+  line-height: 1.25rem;
+}
+
+.footer {
+  margin-top: auto;
+  align-self: center;
 }
