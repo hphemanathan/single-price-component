@@ -313,3 +313,12 @@ li {
   margin-top: auto;
   align-self: center;
 }
+
+.footer-link {
+  color: black;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: grey;
+}
